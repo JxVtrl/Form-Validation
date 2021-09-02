@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <main>
+        <h2>Form Validation</h2>
+        <form action="#">
+            <p class="label">Name</p>
+            <input type="text" name="name" id="name" placeholder="What's your name?">
+            <select id="gender">
+                <option selected disabled>What's your gender?</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            
+            <div id="birth">
+                <label for="date" id="dateLabel">What's your birth date?</label>
+                <input 
+                    type="date" 
+                    name="date" 
+                    id="date"
+                    min="1920-01-01"
+                    max="2022-01-01"
+                >
+            </div>
+            
+            <p class="label">Email</p>
+            <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="What's your email?"
+            >
+            
+            <p class="label">Password</p>
+            <input 
+                type="password" 
+                name="password" 
+                id="password" 
+                placeholder="Make a good password"
+            >
+            
+            <p class="label">Confirm password</p>
+            <input 
+                type="password" 
+                name="confirm-password" 
+                id="confirm-password" 
+                placeholder="Confirm your password"
+            >
+
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
